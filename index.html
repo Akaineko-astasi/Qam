@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Greeting the Heaven</title>
+
+		<!-- TODO! Opacity  -->
+		
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="posture_of_space.bmp" type="image/x-icon">
+
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Neucha|Poiret+One">
+
+		<link rel="stylesheet" href="styles.css">
+
+		<script src="scripts.js"></script>
+
+	</head>
+
+	<body onload="rand_bg()">
+        <div class="w3-card topnav w3-bar">
+            <div class="w3-bar w3-card w3-center">
+                <button class="w3-bar-item w3-button w3-hide-large w3-left" onclick="open_close_sidebar()"><i class="fa fa-bars"></i></button>
+                <a href="#" class="w3-bar-item w3-button w3-right" onclick="show_stuff('contacts')">Contacts</a>
+                <a href="#" class="w3-bar-item w3-button w3-right" onclick="show_stuff('thanks')">Credits</a>
+                <a href="ru_index.html" class="w3-button w3-right"><s>ru</s></a>
+            </div>
+        </div>
+
+        <div id="my_precious_sidebar" class="w3-sidebar w3-bar-block w3-card w3-collapse w3-mobile poiret" onmouseout="open_close_sidebar()">
+            <a href="index.html" class="w3-bar-item">Intro</a>
+            <a href="#" class="w3-bar-item" onclick="show_stuff('lore')">Lore</a>
+            <details><summary class="w3-bar-item">Skills</summary>
+                <div style="margin-left: 5%;">
+					<a href="#" class="w3-bar-item" onclick="show_stuff('skills')">All</a>
+                    <a href="#" class="w3-bar-item">ES-</a>
+                    <a href="#" class="w3-bar-item">KA-</a>
+                    <a href="#" class="w3-bar-item">ON- (Bonfires)</a>
+                    <a href="#" class="w3-bar-item">TSU- (Bonds)</a>
+                    <a href="#" class="w3-bar-item">Other</a>
+                </div>
+			</details>
+            <a href="" class="w3-bar-item"><s>Job Change Quest</s></a>
+        </div>
+
+        <div class="w3-main w3-card">
+			<div id="intro" class="w3-container content">
+
+                <h1 class="handwri">Intro</h1>
+                <h3 class="poiret">What's Going On</h3>
+				<p>This site contains a description for the custom Ragnarök Online job: <strong>Qam, the third job for Soul Linker</strong>.</p>
+                <h3 class="poiret">Why developing the custom one</h3>
+                <p>These ideas were resting quietly until Gravity has released their work-in-progress: third jobs for the Taekwon branch 
+				(<a href="http://ro.gnjoy.com/news/devnote/View.asp?category=1&seq=3376048">link 1</a>, 
+				<a href="http://ro.gnjoy.com/news/devnote/View.asp?category=1&seq=3809674&curpage=1">link 2</a>), 
+				with <strong>Soul Reapers</strong> being third job Soul Linkers.
+				Their skills include curses, energy drain and... blowing up a Soul Link and dealing dark property damage.</p>
+				<p>So the need to show completely defferent Soul Linkers has emerged.</p>
+				<p>Shamans, that connect their life with their land and their people.</p>
+				<p>Ritualists, keeping their laws of conscience.</p>
+				<p>Those who live both with spirits and humans side by side, and teach their children to be good neighbours and respect the life in any form.</p>
+				<p>Those who do not betray their promise: <q>Use your powers wisely...</q></p>
+				<p></p>
+
+            </div>
+
+            <div id="lore" class="w3-container content">
+
+				<h1 class="handwri">Lore</h1>
+				<h3 class="poiret">...</h3>
+
+				<p></p>
+
+            </div>
+
+			<div id="skills" class="w3-container content">
+
+				<h1 class="handwri">Skills</h1>
+
+				<div id="firstone" class="">
+					<div class="w3-card skillcard w3-mobile">
+						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Vow</h3></header>
+						<div>
+							<flavour>The Qam devotes himself to his land and his people, gaining some of its guardian spirit properties. This decision cannot be changed.</flavour>
+							<p><b>Type:</b> Passive<br>
+							<b>Requirements:</b> none<br>
+							<b>Effect:</b></p>
+								<p><ul><li>Kihop now grants MATK bonus along with ATK
+									<li>Qam in the Spirit State now is not able to break party experience sharing
+									<li>Peaceful Break and Happy Break now have % recovery values
+									<li>Soul Links are rebalanced
+								</ul></p>
+						</div>
+						<footer>Quest skill</footer>
+					</div>
+				</div>
+				<div id="es-type" class="skillcat">
+					<h2 class="handwri">ES-type</h2>
+					<p>ES-type skills can only be cast on monsters.</p>
+
+					<div class="w3-card skillcard w3-mobile">
+						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>ES'YONG</h3></header>
+						<div>
+							<flavour></flavour>
+							<p><b>Type:</b> Active<br>
+							<b>Requirements:</b> <br>
+							<b>Resources:</b> 230 sp<br>
+							<b>Effect:</b></p>
+								<p><ul><li>Deals magic damage to all enemies in a 3~5 cell radius around you.
+									<li>Opens ES'MA<span class="notsure"> if dealt any damage</span>
+									<li>750%<span class="notsure"> ~ 1400%</span> MATK
+									<li>KA'INA affects sp cost
+								</ul></p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+						<div></div>
+					</div>
+				</div>
+				<div id="ka-type" class="skillcat">
+					<h2 class="handwri">KA-type</h2>
+					<p>KA-skills are blessings or contracts made with the spirits to serve the Soul Linker at the special purpose. They include mystical avoidance of any next harm, health recovery on being attacked and even instant resurrection upon death.</p>
+					<p>KA-type buffs can only be cast on Soul Linker himself, other Soul Linkers and his family members.</p>
+					<p>The only way to cast KA- on others is to be in the Spirit state (that means, to be buffed with Soul Linker Spirit buff).</p>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>KA'STEH</h3></header>
+						<div>
+							<flavour>The Qam enters the state of guardian spirit, leaving his life behind and following his friend.</flavour>
+							<p><b>Type:</b> Switch<br>
+							<b>Requirements:</b> Crusader Spirit 1, Priest Spirit 1<br>
+							<b>Resources:</b> ~75sp<br>
+							<b>Cooldown:</b> medium (15~30sec)<br>
+							<b>Effect:</b>
+									<ul><li>your property becomes Ghost 1
+									<li>you cannot use any other skills
+									<li>you have 1 hp and any hit damages your sp instead
+									<li>when your defensive target takes physical damage, you take <span class="notsure">half of</span> it instead (to sp)
+									<li>when your sp reaches 0, you quit the state (resulting in 1 hp and 0 sp)
+								</ul></p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+						<div></div>
+					</div>
+				</div>
+				<div id="on-type" class="skillcat">
+					<h2 class="handwri">ON-type</h2>
+					<p>ON-type magic might be called &quot;Bonfires&quot; because of its environmental features. It often affects the space around the caster, targeting allies, ground or monsters.</p>
+					<p>Its effects vary from mass blessings to mass status effects, and is cast with open hands: wide, circular gesture.</p>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Bonfire</h3></header>
+						<div>
+							<flavour>I greet the heart of the land!</flavour>
+							<p><b>Type:</b> Active <br>
+							<b>Target:</b> 3~5 cell radius (7x7 ~ 11x11) zone around the caster<br>
+							<b>Duration:</b> 10~50sec<br>
+							<b>Cooldown:</b> big (0.5~1min)<br>
+							<b>Resources:</b> ~100sp<br>
+							<b>Effect:</b>
+								<ul><li>boosts hp and sp regen depending on caster's P./H.Breaks levels
+									<li>decreases monsters respawn time by x2 (excluding boss monsters) on the map. This effect may have an internal cooldown
+								</ul>
+							</p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+						<div></div>
+					</div>
+				</div>
+				<div id="tsu-type" class="skillcat">
+					<h2 class="handwri">TSU-type</h2>
+					<p>TSU-skills may be called <q>Bonds</q>.</p>
+					<p>TSU effects connect Qam with areas or people and cannot be changed. Vow is a TSU-skill.</p>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Soulbond</h3></header>
+						<div>
+							<flavour>I offer you my true name.</flavour>
+							<p><b>Type:</b> Active <br>
+							<b>Target:</b> Player<br>
+							<b>Duration:</b> once set, cannot be changed (similar to Star Gladiator's Place / Anger choises)<br>
+							<b>Resources:</b> 100sp<br>
+							<b>Effect:</b>
+								<ul><li>Adds a player to Qam's <q>family</q>. This validates the player for Qam's KA- magic.<br>
+									<li>There will be also a corresponding passive TSU'OH, that adds (0,0,1,1,2) slots.
+								</ul>
+							</p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+						<div></div>
+					</div>
+				</div>
+				<div id="other_skills" class="skillcat">
+					<h2 class="handwri">Other Skills</h2>
+					<p>Here will go other skills from all categories.</p>
+					<div id="other_skills_content">
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
+							<div>
+								<flavour>Flavour Description</flavour>
+								<p><b>Type:</b> <br>
+								<b>Target:</b> <br>
+								<b>Duration:</b> <br>
+								<b>Cooldown:</b> <br>
+								<b>Resources:</b> <br>
+								<b>Effect:</b>
+									<ul><li>
+										<li>
+									</ul>
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+							<div></div>
+						</div>
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
+							<div>
+								<flavour>Flavour Description</flavour>
+								<p><b>Type:</b> <br>
+								<b>Target:</b> <br>
+								<b>Duration:</b> <br>
+								<b>Cooldown:</b> <br>
+								<b>Resources:</b> <br>
+								<b>Effect:</b>
+									<ul><li>
+										<li>
+										<li>
+										<li>
+									</ul>
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+							<div></div>
+						</div>
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
+							<div>
+								<flavour>Flavour Description</flavour>
+								<p><b>Type:</b> <br>
+								<b>Target:</b> <br>
+								<b>Duration:</b> <br>
+								<b>Cooldown:</b> <br>
+								<b>Resources:</b> <br>
+								<b>Effect:</b>
+									<ul><li>
+										<li>
+									</ul>
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+							<div></div>
+						</div>
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
+							<div>
+								<flavour>Flavour Description</flavour>
+								<p><b>Type:</b> <br>
+								<b>Target:</b> <br>
+								<b>Duration:</b> <br>
+								<b>Cooldown:</b> <br>
+								<b>Resources:</b> <br>
+								<b>Effect:</b>
+									<ul><li>
+										<li>
+									</ul>
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+							<div></div>
+						</div>
+					</div>
+				</div>
+
+
+					<!-- <div class="w3-card skillcard w3-mobile">
+						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
+						<div>
+							<flavour>Flavour description</flavour>
+							<p><b>Type:</b> <br>
+							<b>Requirements:</b> <br>
+							<b>Resources:</b> <br>
+							<b>Effect:</b>
+									<ul>
+									<li>
+									<li>
+								</ul></p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+						<div></div>
+					</div> -->
+
+				</div>
+
+			<!-- other stuff -->
+			<div id="thanks" class="w3-container content">
+
+				<h1 class="handwri">Credits</h1>
+                <h3 class="poiret">This place would be different without you</h3>
+                <p>Ragnarok Online Concept: <a href="http://ro.gnjoy.com/">Gravity Co, Ltd.</a></p>
+				<p>The best private servers: <a href="http://www.rofenrir.ru/">ROFenrir</a>, <a href="http://playro.ru/">PlayRO</a></p>
+				<p>Background images: Found in the Web (please <a href='#' onclick="show_stuff('contacts')">contact</a> me if you're an author!)</p>
+				<p></p>
+				<p></p>
+
+			</div>
+			<div id="contacts" class="w3-container content">
+
+				<h1 class="handwri">Contacts</h1>
+
+			</div>
+
+		</div>
+    </body>
+</html>

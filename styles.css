@@ -1,0 +1,111 @@
+html, body, h1, h2, h3, h4, h5, h6 { font-family: "Ubuntu", sans-serif; }
+h1, h2, h3, h4 { text-align: center; font-weight: bold;}
+.poiret { font-family: "Poiret One"; font-size: 22px;}
+.handwri { font-family: "Neucha", cursive; font-weight: normal;}
+
+.w3-main {
+    background-color: #ffffff88;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-left: 21%;
+    margin-bottom: 1%;
+    border-radius: 7px;
+    padding: 1%;
+}
+
+.content {
+    display: none;
+}
+#intro {display: block;}
+.notsure {color: #00000088}
+
+
+#thanks a, #contacts a, #intro a {
+    text-decoration: none;
+    color: #000000aa;
+}
+#thanks a:hover, #contacts a:hover, #intro a:hover {
+    color: #ffffff;
+}
+#thanks, #contacts {text-align: center;}
+
+
+.w3-sidebar {
+    background-color: #00000088;
+    color: #ffffff;
+    border-radius: 0px 7px 0px 0px;
+    width: 20%;
+}
+
+.w3-bar-item:hover {
+    background-color: #ffffff33;
+}
+
+.topnav {
+    position: fixed;
+    top: 0px;
+    background-color: #ffffff44;
+
+}
+
+
+/* Skill Cards Start */
+
+.skillcard {
+    width: 65%;
+    margin: 3% auto 3% auto;
+    background-color: #ffffff88;
+    padding: 1em;
+    border-radius: 7px;
+}
+.skillcard2 {
+    margin: 3%;
+    background-color: #ffffff44;
+    padding: 1em;
+    border-radius: 7px;
+    min-width: 45%;
+}
+.skillcard h2 {text-align: center; font-family: "Poiret One";}
+.skillcard2 h2 {text-align: center; font-family: "Poiret One";}
+.skillcard footer { color:#000000aa; }
+.skillcard2 footer { color:#000000aa; }
+.skillcard flavour {font-style: italic;}
+.skillcard2 flavour {font-style: italic;}
+#other_skills_content {
+    display: grid; grid-template-columns: auto auto;
+}
+
+/* Skill Cards End */
+
+/* .skillcat {margin-top: 15%;} */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px}
+}
+
+/* Lang Lab Start */
+:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+:lang(ru) > q { quotes: '«' '»'; }
+/* Lang Lab End */
+
+q {font-style: italic;}
+a {text-decoration: none;}

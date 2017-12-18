@@ -83,7 +83,7 @@
 
 				<div id="firstone" class="">
 					<div class="w3-card skillcard w3-mobile">
-						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Vow</h3></header>
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Vow</h3></header>
 						<div>
 							<flavour>The Qam devotes himself to his land and his people, gaining some of its guardian spirit properties. This decision cannot be changed.</flavour>
 							<p><b>Type:</b> Passive<br>
@@ -103,15 +103,18 @@
 					<p>ES-type skills can only be cast on monsters.</p>
 
 					<div class="w3-card skillcard w3-mobile">
-						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>ES'YONG</h3></header>
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>ES'YONG</h3></header>
 						<div>
 							<flavour></flavour>
 							<p><b>Type:</b> Active<br>
-							<b>Requirements:</b> <br>
-							<b>Resources:</b> 230 sp<br>
-							<b>Effect:</b></p>
-								<p><ul><li>Deals magic damage to all enemies in a 3~5 cell radius around you.
-									<li>Opens ES'MA<span class="notsure"> if dealt any damage</span>
+							<b>Casting Time:</b> 2 sec<br>
+							<b>Cooldown:</b> 3.5~2.7 sec<br>
+							<b>Cast Delay:</b> Instant (ASPD)<br>
+							<b>Resources:</b> 230~130 sp<br>
+							<b>Effect:</b><ul>
+									<li>Can only be cast within 3 sec after ( ES'TIN, ES'TUN, ES'MA, ES'WOO, ES'KE ), Soul Links, and ES'CHI
+									<li>Deals magic damage to all enemies in a 3~5 cell radius around you.
+									<li>Opens ES'MA
 									<li>750%<span class="notsure"> ~ 1400%</span> MATK
 									<li>KA'INA affects sp cost
 								</ul></p>
@@ -119,34 +122,75 @@
 						<footer>
 							<p></p>
 						</footer>
-						<div></div>
 					</div>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>ES'CHI</h3></header>
+						<div>
+							<flavour>Qam connects with surrounding monsters, perceiving them and marking them as his prey.</flavour>
+							<p><b>Type:</b> Active<br>
+							<b>Duration:</b> 1~7sec<br>
+							<b>Casting Time:</b> 0.7 sec<br>
+							<b>Cooldown:</b> No<br>
+							<b>Cast Delay:</b> 3~1 sec<br>
+							<b>Resources:</b> ~75 sp<br>
+							<b>Effect:</b><ul>
+									<li>Enemies in 3 cell radius around you will restore killer's sp (about 10~15 sp, that means monster level / 10 sp)
+									<li>This effect stacks with Soul Collector's armor
+									<li><span class="notsure">You can also channel any ES buff through this</span>
+								</ul></p>
+						</div>
+						<footer>
+							<p>Small luminous phial above target's head marks the target.</p>
+						</footer>
 				</div>
 				<div id="ka-type" class="skillcat">
 					<h2 class="handwri">KA-type</h2>
-					<p>KA-skills are blessings or contracts made with the spirits to serve the Soul Linker at the special purpose. They include mystical avoidance of any next harm, health recovery on being attacked and even instant resurrection upon death.</p>
+					<p>KA-skills are blessings or contracts made with spirits to serve the Soul Linker at some special purpose. These include mystical avoidance of any next harm, health recovery on being attacked and even instant resurrection upon death.</p>
 					<p>KA-type buffs can only be cast on Soul Linker himself, other Soul Linkers and his family members.</p>
 					<p>The only way to cast KA- on others is to be in the Spirit state (that means, to be buffed with Soul Linker Spirit buff).</p>
 					<div class="w3-card skillcard w3-mobile">
-						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>KA'STEH</h3></header>
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>KA'STEH</h3></header>
 						<div>
 							<flavour>The Qam enters the state of guardian spirit, leaving his life behind and following his friend.</flavour>
-							<p><b>Type:</b> Switch<br>
+							<p><b>Type:</b> KA Switch<br>
 							<b>Requirements:</b> Crusader Spirit 1, Priest Spirit 1<br>
-							<b>Resources:</b> ~75sp<br>
+							<b>Casting Time:</b> 1.5 sec<br>
 							<b>Cooldown:</b> medium (15~30sec)<br>
+							<b>Resources:</b> ~75sp<br>
 							<b>Effect:</b>
 									<ul><li>your property becomes Ghost 1
 									<li>you cannot use any other skills
 									<li>you have 1 hp and any hit damages your sp instead
 									<li>when your defensive target takes physical damage, you take <span class="notsure">half of</span> it instead (to sp)
-									<li>when your sp reaches 0, you quit the state (resulting in 1 hp and 0 sp)
+									<li>when your sp reaches 0, the state ends (resulting in 1 hp and 0 sp)
+									<li>when you are not on the same map, the state ends</li>
 								</ul></p>
 						</div>
 						<footer>
 							<p></p>
 						</footer>
-						<div></div>
+					</div>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Mirror of Souls</h3></header>
+						<div>
+							<flavour></flavour>
+							<p><b>Type:</b> KA Buff<br>
+							<b>Target:</b> Self only<br>
+							<b>Requirements:</b> <br>
+							<b>Casting Time:</b> ~2 sec<br>
+							<b>Duration:</b> Until released<br>
+							<b>Cooldown:</b> ~5 sec<br>
+							<b>Cast Delay:</b> Instant (ASPD)<br>
+							<b>Resources:</b> 45~65 sp<br>
+							<b>Effect:</b> You get the Mirror of Souls status
+									<ul><li> the next KA spell cast on yourself is reflected to all players around you in 3 cell radius instead
+									<li> only valid targets will be affected
+									<li> the status is released upon reflection
+								</ul></p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
 					</div>
 				</div>
 				<div id="on-type" class="skillcat">
@@ -154,24 +198,24 @@
 					<p>ON-type magic might be called &quot;Bonfires&quot; because of its environmental features. It often affects the space around the caster, targeting allies, ground or monsters.</p>
 					<p>Its effects vary from mass blessings to mass status effects, and is cast with open hands: wide, circular gesture.</p>
 					<div class="w3-card skillcard w3-mobile">
-						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Bonfire</h3></header>
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Bonfire</h3></header>
 						<div>
 							<flavour>I greet the heart of the land!</flavour>
 							<p><b>Type:</b> Active <br>
 							<b>Target:</b> 3~5 cell radius (7x7 ~ 11x11) zone around the caster<br>
+							<b>Casting Time:</b> 1 sec<br>
 							<b>Duration:</b> 10~50sec<br>
 							<b>Cooldown:</b> big (0.5~1min)<br>
 							<b>Resources:</b> ~100sp<br>
 							<b>Effect:</b>
 								<ul><li>boosts hp and sp regen depending on caster's P./H.Breaks levels
-									<li>decreases monsters respawn time by x2 (excluding boss monsters) on the map. This effect may have an internal cooldown
+									<li>decreases monsters respawn time by x2 (excluding boss monsters) on the map. This effect may have its own cooldown
 								</ul>
 							</p>
 						</div>
 						<footer>
 							<p></p>
 						</footer>
-						<div></div>
 					</div>
 				</div>
 				<div id="tsu-type" class="skillcat">
@@ -179,12 +223,13 @@
 					<p>TSU-skills may be called <q>Bonds</q>.</p>
 					<p>TSU effects connect Qam with areas or people and cannot be changed. Vow is a TSU-skill.</p>
 					<div class="w3-card skillcard w3-mobile">
-						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Soulbond</h3></header>
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Soulbond</h3></header>
 						<div>
 							<flavour>I offer you my true name.</flavour>
 							<p><b>Type:</b> Active <br>
 							<b>Target:</b> Player<br>
 							<b>Duration:</b> once set, cannot be changed (similar to Star Gladiator's Place / Anger choises)<br>
+							<b>Casting Time:</b> 10 sec (not aff. by Dex; uninterruptable)<br>
 							<b>Resources:</b> 100sp<br>
 							<b>Effect:</b>
 								<ul><li>Adds a player to Qam's <q>family</q>. This validates the player for Qam's KA- magic.<br>
@@ -195,7 +240,6 @@
 						<footer>
 							<p></p>
 						</footer>
-						<div></div>
 					</div>
 				</div>
 				<div id="other_skills" class="skillcat">
@@ -203,7 +247,22 @@
 					<p>Here will go other skills from all categories.</p>
 					<div id="other_skills_content">
 						<div class="w3-card skillcard2 w3-mobile">
-							<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Sight of the Void</h3></header>
+							<div>
+								<flavour>Qam is not able to limit his vision to one world anymore. The Veil is now thinner and closer.</flavour>
+								<!-- <flavour>Кам больше не способен ограничить зрение всего одним миром. Завеса для него становится тоньше и ближе, миры проникают друг в друга.</flavour> -->
+								<p><b>Type:</b> KA Passive<br>
+								<b>Max level:</b> 3<br>
+								<b>Effect:</b>
+									+3 cell range to all targeted magic (incl. 2nd job skills that require a single target)
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+						</div>
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
 							<div>
 								<flavour>Flavour Description</flavour>
 								<p><b>Type:</b> <br>
@@ -214,7 +273,25 @@
 								<b>Effect:</b>
 									<ul><li>
 										<li>
+										<li>
+										<li>
 									</ul>
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+						</div>
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Wings of Eternity</h3></header>
+							<div>
+								<flavour>Beware that, when fighting monsters, you yourself do not become a monster...</flavour>
+								<!-- <flavour>В борьбе с чудовищами будь осторожен, чтобы самому не стать чудовищем...</flavour> -->
+								<p><b>Type:</b> TSU Passive<br>
+								<b>Max level:</b> 1<br>
+								<b>Effect:</b>
+									KA skills now open combo ES skills.
+								<b>Requirements:</b> 100500 (top skill)<br>
 								</p>
 							</div>
 							<footer>
@@ -223,77 +300,35 @@
 							<div></div>
 						</div>
 						<div class="w3-card skillcard2 w3-mobile">
-							<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Flower of Eternity</h3></header>
 							<div>
-								<flavour>Flavour Description</flavour>
-								<p><b>Type:</b> <br>
-								<b>Target:</b> <br>
-								<b>Duration:</b> <br>
-								<b>Cooldown:</b> <br>
-								<b>Resources:</b> <br>
+								<flavour>...For when you gaze long into the abyss the abyss also gazes into you.</flavour>
+								<!-- <flavour>...Ибо если будешь долго всматриваться в бездну, бездна начнёт всматриваться в тебя.</flavour> -->
+								<p><b>Type:</b> ON Passive<br>
+								<b>Max level:</b> 10<br>
 								<b>Effect:</b>
-									<ul><li>
-										<li>
-										<li>
-										<li>
-									</ul>
+									ES'MA base damage increases from (40 + blvl) % to <span class="notsure">[ (40 + blvl) * (skilllvl - 1) ] % </span>
 								</p>
 							</div>
 							<footer>
 								<p></p>
 							</footer>
-							<div></div>
-						</div>
-						<div class="w3-card skillcard2 w3-mobile">
-							<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
-							<div>
-								<flavour>Flavour Description</flavour>
-								<p><b>Type:</b> <br>
-								<b>Target:</b> <br>
-								<b>Duration:</b> <br>
-								<b>Cooldown:</b> <br>
-								<b>Resources:</b> <br>
-								<b>Effect:</b>
-									<ul><li>
-										<li>
-									</ul>
-								</p>
-							</div>
-							<footer>
-								<p></p>
-							</footer>
-							<div></div>
-						</div>
-						<div class="w3-card skillcard2 w3-mobile">
-							<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
-							<div>
-								<flavour>Flavour Description</flavour>
-								<p><b>Type:</b> <br>
-								<b>Target:</b> <br>
-								<b>Duration:</b> <br>
-								<b>Cooldown:</b> <br>
-								<b>Resources:</b> <br>
-								<b>Effect:</b>
-									<ul><li>
-										<li>
-									</ul>
-								</p>
-							</div>
-							<footer>
-								<p></p>
-							</footer>
-							<div></div>
 						</div>
 					</div>
 				</div>
 
 
 					<!-- <div class="w3-card skillcard w3-mobile">
-						<header><h2><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br>Name</h3></header>
 						<div>
 							<flavour>Flavour description</flavour>
 							<p><b>Type:</b> <br>
+							<b>Target:</b> <br>
 							<b>Requirements:</b> <br>
+							<b>Casting Time:</b> <br>
+							<b>Duration:</b> <br>
+							<b>Cooldown:</b> <br>
+							<b>Cast Delay:</b> <br>
 							<b>Resources:</b> <br>
 							<b>Effect:</b>
 									<ul>
@@ -304,10 +339,9 @@
 						<footer>
 							<p></p>
 						</footer>
-						<div></div>
 					</div> -->
 
-				</div>
+			</div>
 
 			<!-- other stuff -->
 			<div id="thanks" class="w3-container content">
@@ -318,7 +352,7 @@
 				<p>The best private servers: <a href="http://www.rofenrir.ru/">ROFenrir</a>, <a href="http://playro.ru/">PlayRO</a></p>
 				<p>Background images: Found in the Web (please <a href='#' onclick="show_stuff('contacts')">contact</a> me if you're an author!)</p>
 				<p></p>
-				<p></p>
+				<p style="bottom;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /><br /></a>All the original content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 
 			</div>
 			<div id="contacts" class="w3-container content">

@@ -9,7 +9,7 @@ body {
 }
 
 .w3-main {
-    background-color: #ffffff88;
+    background-color: rgba(255,255,255,0.5);
     margin-right: 10%;
     margin-top: 5%;
     margin-left: 21%;
@@ -22,34 +22,34 @@ body {
     display: none;
 }
 #intro {display: block;}
-.notsure {color: #00000088}
+.notsure {color: rgba(0,0,0,0.5)}
 
 
 #thanks a, #contacts a, #intro a {
     text-decoration: none;
-    color: #000000aa;
+    color: rgba(0,0,0,0.65);
 }
 #thanks a:hover, #contacts a:hover, #intro a:hover {
-    color: #ffffff;
+    color: rgba(255,255,255,1);
 }
 #thanks, #contacts {text-align: center;}
 
 
 .w3-sidebar {
-    background-color: #00000088;
-    color: #ffffff;
+    background-color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,1);
     border-radius: 0px 7px 0px 0px;
     width: 20%;
 }
 
 .w3-bar-item:hover {
-    background-color: #ffffff33;
+    background-color: rgba(255,255,255,0.25);
 }
 
 .topnav {
     position: fixed;
     top: 0px;
-    background-color: #ffffffcc;
+    background-color: rgba(255,255,255,0.75);
 
 }
 
@@ -59,21 +59,21 @@ body {
 .skillcard {
     width: 65%;
     margin: 3% auto 3% auto;
-    background-color: #ffffff88;
+    background-color: rgba(255,255,255,0.5);
     padding: 1em;
     border-radius: 7px;
 }
 .skillcard2 {
     margin: 3%;
-    background-color: #ffffff88;
+    background-color: rgba(255,255,255,0.5);
     padding: 1em;
     border-radius: 7px;
     min-width: 45%;
 }
 .skillcard h3 {text-align: center; font-family: "Poiret One";}
 .skillcard2 h3 {text-align: center; font-family: "Poiret One";}
-.skillcard footer { color:#000000aa; }
-.skillcard2 footer { color:#000000aa; }
+.skillcard footer { color:rgba(0,0,0,0.65); }
+.skillcard2 footer { color:rgba(0,0,0,0.65); }
 .skillcard flavour {font-style: italic;}
 .skillcard2 flavour {font-style: italic;}
 #other_skills_content {
@@ -96,7 +96,6 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

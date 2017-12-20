@@ -14,8 +14,8 @@ function open_close_sidebar() {
 //Background Start
 function rand_bg() {
     var y = String(Math.round(Math.random() * 10));
-    var str = "background: fixed center url(wallpapers/bg-0" + y + ".jpg); background-size: cover;";
-    document.body.style = str;
+    var str = "background: url(wallpapers/bg-0" + y + ".jpg) no-repeat center fixed; background-size: cover;";
+    document.documentElement.style = str;
 }
 //Background End
 

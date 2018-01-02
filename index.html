@@ -35,26 +35,26 @@
         <div class="w3-card topnav w3-bar">
             <div class="w3-bar w3-card w3-center">
                 <button class="w3-bar-item w3-button w3-hide-large w3-left" onclick="open_close_sidebar()"><i class="fa fa-bars"></i></button>
-                <a href="#" class="w3-bar-item w3-button w3-right" onclick="show_stuff('contacts')">Contacts</a>
-                <a href="#" class="w3-bar-item w3-button w3-right" onclick="show_stuff('thanks')">Credits</a>
+                <div class="w3-bar-item w3-button w3-right" onclick="show_stuff('contacts')">Contacts</div>
+                <div class="w3-bar-item w3-button w3-right" onclick="show_stuff('thanks')">Credits</div>
                 <a href="ru_index.html" class="w3-button w3-right"><s>ru</s></a>
             </div>
         </div>
 
-        <div id="my_precious_sidebar" class="w3-sidebar w3-bar-block w3-card w3-collapse w3-mobile poiret" onmouseout="open_close_sidebar()">
+        <div id="my_precious_sidebar" class="w3-sidebar w3-bar-block w3-card w3-collapse poiret w3-mobile" onmouseout="open_close_sidebar()">
             <a href="index.html" class="w3-bar-item">Intro</a>
-            <a href="#" class="w3-bar-item" onclick="show_stuff('lore')">Lore</a>
+            <div class="w3-bar-item" onclick="show_stuff('lore')">Lore</div>
             <details><summary class="w3-bar-item" onclick="show_stuff('skills')">Skills</summary>
                 <div style="margin-left: 5%;">
-					<a href="#" class="w3-bar-item" onclick="show_stuff('skills')">All</a>
-                    <a href="#" class="w3-bar-item">ES-</a>
-                    <a href="#" class="w3-bar-item">KA-</a>
-                    <a href="#" class="w3-bar-item">ON- (Bonfires)</a>
-                    <a href="#" class="w3-bar-item">TSU- (Bonds)</a>
-                    <a href="#" class="w3-bar-item">Other</a>
+					<div class="w3-bar-item" onclick="show_stuff('skills')">All</div>
+                    <div class="w3-bar-item">ES-</div>
+                    <div class="w3-bar-item">KA-</div>
+                    <div class="w3-bar-item">ON- (Bonfires)</div>
+                    <div class="w3-bar-item">TSU- (Bonds)</div>
+                    <div class="w3-bar-item">Other</div>
                 </div>
 			</details>
-            <a href="#" class="w3-bar-item" onclick="show_stuff('features')">Features</a>
+            <div class="w3-bar-item" onclick="show_stuff('features')">Features</div>
             <a href="" class="w3-bar-item"><s>Job Change Quest</s></a>
         </div>
 

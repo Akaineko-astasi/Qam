@@ -1,6 +1,33 @@
-@media only screen and (max-width: 300px) 	{ 
-	.prev, .next, .text 					{
-		font-size: 11px						;}}
+@media only screen and (max-width: 300px) 	{ .prev, .next, .text {	font-size: 11px	;}}
+
+@media only screen and (max-width: 75em) {
+	.w3-main {
+		margin-right: 10%;
+		margin-left: 21%;
+	}
+}
+
+@media only screen and (max-width: 50em) {
+	.skillcard2 { width: 75%; }
+}
+
+@media only screen and (min-width: 50em) {
+	#other_skills_content {	display: grid; grid-template-columns: auto auto; }
+	.skillcard2 { width: 95%; }
+}		
+
+@media only screen and (min-width: 75em) {
+	#my_precious_sidebar {
+		border-radius: 7px;
+		margin-left: 2%;
+	}
+	.w3-main {
+		max-width: 70em;
+		margin-left: 25%;
+		width: 60%;
+	}
+}	
+
 
 
 html, body, h1, h2, h3, h4, h5, h6 { font-family: "Ubuntu", sans-serif; }
@@ -18,12 +45,10 @@ body {
 
 .w3-main {
     background-color: rgba(255,255,255,0.5);
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-left: 21%;
-    margin-bottom: 1%;
     border-radius: 7px;
     padding: 1%;
+	margin-top: 5%;
+	margin-bottom: 1%;
 }
 
 .content {
@@ -51,8 +76,9 @@ body {
     width: 20%;
 }
 
+.w3-bar-item {cursor: pointer;}
 .w3-bar-item:hover {
-    background-color: rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,.2);
 }
 
 .topnav {
@@ -66,14 +92,14 @@ body {
 /* Skill Cards Start */
 
 .skillcard {
-    width: 65%;
+    width: 75%;
     margin: 3% auto 3% auto;
     background-color: rgba(255,255,255,0.5);
     padding: 1em;
     border-radius: 7px;
 }
 .skillcard2 {
-    margin: 3%;
+    margin: 3% auto 3% auto;
     background-color: rgba(255,255,255,0.5);
     padding: 1em;
     border-radius: 7px;
@@ -85,9 +111,7 @@ body {
 .skillcard2 footer { color:rgba(0,0,0,0.65); }
 .skillcard flavour {font-style: italic;}
 .skillcard2 flavour {font-style: italic;}
-#other_skills_content {
-    display: grid; grid-template-columns: auto auto;
-}
+
 
 /* Skill Cards End */
 

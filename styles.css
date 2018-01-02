@@ -1,3 +1,8 @@
+@media only screen and (max-width: 300px) 	{ 
+	.prev, .next, .text 					{
+		font-size: 11px						;}}
+
+
 html, body, h1, h2, h3, h4, h5, h6 { font-family: "Ubuntu", sans-serif; }
 h1, h2, h3, h4 { text-align: center; font-weight: bold;}
 .poiret { font-family: "Poiret One"; font-size: 22px;}
@@ -5,6 +10,9 @@ h1, h2, h3, h4 { text-align: center; font-weight: bold;}
 
 body {
 	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
 	background: fixed no-repeat center;
 }
 
@@ -20,16 +28,17 @@ body {
 
 .content {
     display: none;
+	animation:opac 1s;
 }
 #intro {display: block;}
 .notsure {color: rgba(0,0,0,0.5)}
 
 
-#thanks a, #contacts a, #intro a {
+.w3-main a {
     text-decoration: none;
     color: rgba(0,0,0,0.65);
 }
-#thanks a:hover, #contacts a:hover, #intro a:hover {
+.w3-main a:hover {
     color: rgba(255,255,255,1);
 }
 #thanks, #contacts {text-align: center;}
@@ -84,14 +93,13 @@ body {
 
 /* .skillcat {margin-top: 15%;} */
 
-/* Fading animation */
+/* Animations */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -101,9 +109,7 @@ body {
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 300px) {
-    .prev, .next, .text {font-size: 11px}
-}
+@keyframes opac{from{opacity:0} to{opacity:1}}
 
 
 /* Lang Lab Start */

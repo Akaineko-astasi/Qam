@@ -11,23 +11,36 @@ function open_close_sidebar() {
 }
 //Sidebar End
 
-//Background Start
-function rand_bg() {
-    var y = String(Math.round(Math.random() * 10));
-    var str = "background: url(wallpapers/bg-0" + y + ".jpg) no-repeat center fixed; background-size: cover;";
-    document.documentElement.style = str;
-}
-//Background End
 
 // Menu Start
-
-    function show_stuff(id) {
-        var cur = document.getElementById(id);
-        var contentz = document.getElementsByClassName('content');
-        var i;
-        for (i = 0; i < contentz.length; i++) {
-            contentz[i].style.display = "none";
-        }
-        cur.style.display = "block";
-    }
+function show_stuff(id) {
+	var cur = document.getElementById(id);
+	var contentz = document.getElementsByClassName('content');
+	var i;
+	for (i = 0; i < contentz.length; i++) {
+		contentz[i].style.display = "none";
+	}
+	cur.style.display = "block";
+}
 // Menu End
+
+
+function show_stuffie(id) {
+	var u = document.getElementById(id);
+	if (u.style.display == "none") {
+		u.style.display = "inline";
+	} else {
+		u.style.display = "none";
+	}
+}
+
+
+/* 
+function() {
+  $(this).addClass('current').siblings().removeClass('current')
+    .parents('div.section').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
+  var ulIndex = $('ul.tabs').index($(this).parents('ul.tabs'));
+  eraseCookie('tabCookie' + ulIndex);
+  createCookie('tabCookie' + ulIndex, $(this).index(), 365);
+}
+ */

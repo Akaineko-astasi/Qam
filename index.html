@@ -20,8 +20,11 @@
 		<script src="scripts.js"></script>
 		<script>
 			var y = String(Math.round(Math.random() * 10));
+			var n;
+			if (window.matchMedia("(max-width: 600px)").matches) { n = 0; } 
+			else n = 1;
 			document.write(
-				"<style> body {	background: url(wallpapers/bg-0" + y + ".jpg) no-repeat center fixed; background-size: cover; } </style>"
+				"<style> body {	background: url(wallpapers/"+ n +"/bg-0" + y + ".jpg) no-repeat center fixed; background-size: cover; } </style>"
 			);
 		</script>
 		

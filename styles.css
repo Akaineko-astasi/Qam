@@ -37,6 +37,11 @@ h1, h2, h3, h4 { text-align: center; font-weight: bold;}
 .poiret { font-family: "Poiret One"; font-size: 22px;}
 .handwri { font-family: "Neucha", cursive; font-weight: normal;}
 
+html {
+    height: 100vh; 
+    min-height: 100%; 
+}
+
 body {
 	background-size: cover;
 	-webkit-background-size: cover;

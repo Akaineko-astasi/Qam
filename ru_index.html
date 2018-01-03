@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    	<title>Приветствуя Небо</title>
+
+		<!-- TODO! Opacity  -->
+		
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="posture_of_space.bmp" type="image/x-icon" />
+
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Neucha|Poiret+One" />
+
+		<link rel="stylesheet" href="styles.css" />
+
+		<script src="scripts.js"></script>
+		<script>
+			var y = String(Math.round(Math.random() * 10));
+			var n;
+			if (window.matchMedia("(max-width: 600px)").matches) { n = 0; } 
+			else n = 1;
+			document.write(
+				"<style> body {	background: url(wallpapers/"+ n +"/bg-0" + y + ".jpg) no-repeat center fixed; background-size: cover; } </style>"
+			);
+		</script>
+		
+
+	</head>
+
+	<body>
+        <div class="w3-card topnav w3-bar">
+            <div class="w3-bar w3-card w3-center">
+                <button class="w3-bar-item w3-button w3-hide-large w3-left" onclick="open_close_sidebar()"><i class="fa fa-bars"></i></button>
+                <div class="w3-bar-item w3-button w3-right" onclick="show_stuff('contacts')">Контакты</div>
+                <div class="w3-bar-item w3-button w3-right" onclick="show_stuff('thanks')">Спасибы</div>
+                <a href="index.html" class="w3-button w3-right">en</a>
+            </div>
+        </div>
+
+        <div id="my_precious_sidebar" class="w3-sidebar w3-bar-block w3-card w3-collapse poiret w3-mobile" onmouseout="open_close_sidebar()">
+            <a href="ru_index.html" class="w3-bar-item">Введение</a>
+            <div class="w3-bar-item" onclick="show_stuff('lore')">История</div>
+            <details><summary class="w3-bar-item" onclick="show_stuff('skills')">Умения</summary>
+                <div style="margin-left: 5%;">
+					<div class="w3-bar-item" onclick="show_stuff('skills')">Все</div>
+                    <div class="w3-bar-item">ЭС-</div>
+                    <div class="w3-bar-item">KA-</div>
+                    <div class="w3-bar-item">ОН- (Костры)</div>
+                    <div class="w3-bar-item">ЦУ- (Сцепки)</div>
+                    <div class="w3-bar-item">Прочие</div>
+                </div>
+			</details>
+            <div class="w3-bar-item" onclick="show_stuff('features')">Особенности</div>
+            <a href="" class="w3-bar-item"><s>Посвящение</s></a>
+        </div>
+
+        <div class="w3-main w3-card">
+			<div id="intro" class="w3-container content">
+
+                <h1 class="handwri">Введение</h1>
+                <h3 class="poiret">Что здесь происходит</h3>
+				<p>На этих страницах хранится описание модификации для игры Рагнарёк Онлайн: <strong>Кам, призвание третьей ступени для шамана (медиума)</strong>.</p>
+                <h3 class="poiret">Зачем писать свою профу</h3>
+                <p>Эти идеи тихо жили и никого не трогали, пока Гравити не обьявила о своих разработках третьих профессий для ветви Тхэквонов 
+				(<a href="http://ro.gnjoy.com/news/devnote/View.asp?category=1&seq=3376048">ссыль 1</a>, 
+				<a href="http://ro.gnjoy.com/news/devnote/View.asp?category=1&seq=3809674&curpage=1">ссыль 2</a>), 
+				в частности <strong>Жнеца</strong>, третьей профессии Медиума.
+				Их способности включают в себя проклятия, похищение энергии...
+				А ещё они взрывают наведённый дух, нанося урон элемента Тьма.</p>
+				<p>Возникла нужда показать совершенно других линкеров.</p>
+				<p>Шаманов на своей земле и среди своего народа.</p>
+				<p>Хранителей ритуалов и традиций, опирающихся на закон совести.</p>
+				<p>Тех, кто живёт бок о бок с духами и людьми, 
+				уча детей быть добрыми соседями и уважать жизнь в любых её проявлениях.</p>
+				<p>Тех, кто не забыл однажды данного слова: <q>Использовать полученную силу во благо...</q></p>
+				<p><i>Данный концепт не претендует на полную и адекватную замену корейской разработке, 
+				поскольку порождён в другом этнокультурном пространстве и, возможно, имеет другие цели, 
+				хотя картина мира, его содержащая, конфликтует с официальной чуть более, чем полностью. </i></p>
+				<h3 class="poiret">Особенности перевода</h3>
+				<p>В данном месте будут использоваться следующие термины. </p>
+				<p>
+				<b>Английский термин</b> (Термин руоффа) -- Местный термин<br />
+				<b>Job</b> (Профессия) -- Призвание<br />
+				<b>Seсond Job</b> (Вторая профессия) -- Призвание второй ступени<br />
+				<b>Soul Linker</b> (Медиум) -- Шаман<br />
+				<b>Spirit state</b> (Дух, состояние духа) -- Одержимость<br />
+				<b>Monster</b> (Монстр) -- Чудовище<br />
+				<b>SP, Spiritual Power</b> (SP) -- ДС, душевные силы<br />
+				<b></b><br />
+				</p>
+
+            </div>
+
+            <div id="lore" class="w3-container content">
+
+				<h1 class="handwri">История</h1>
+				<h3 class="poiret">...</h3>
+
+				<p></p>
+
+            </div>
+
+			<div id="skills" class="w3-container content">
+
+				<h1 class="handwri">Умения</h1>
+
+				<div id="firstone" class="">
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Обет</h3></header>
+						<div>
+							<flavour>Кам посвящает себя своей земле и своему народу, приобретая некоторые свойства духа-защитника. Это решение нельзя изменить.</flavour>
+							<p><b>Тип:</b> пассивное <br />
+							<b>Требования:</b> нет<br />
+							<b>Эффект:</b></p>
+								<p><ul><li>Кихоп теперь даёт МАТК наряду с АТК
+									<li>Кам, одержимый Духом шамана, больше не ломает шару экспы в пати
+									<li>Сила Лотоса и Женьшеня (Peaceful Break, Happy Break) теперь имеют процентные значения
+									<li>Эффекты Духов дополнены с учётом Призваний третьей ступени
+								</ul></p>
+						</div>
+						<footer>Сюжетное умение</footer>
+					</div>
+				</div>
+				<div id="es-type" class="skillcat">
+					<h2 class="handwri">ЭС-</h2>
+					<p>ЭС-магия действует только на чудовищ.</p>
+
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />ЭС`ЁН</h3></header>
+						<div>
+							<flavour></flavour>
+							<p><b>Тип:</b> активное<br />
+							<b>Время подготовки:</b> 2 с<br />
+							<b>Перезарядка:</b> 3.5~2.7 с<br />
+							<b>Общая задержка:</b> мгновенная (АСПД)<br />
+							<b>Цена:</b> 230~130 дс<br />
+							<b>Эффект:</b><ul>
+									<li>Произносимо только вслед за ( ЭС`ТИН, ЭС`ТУН, ЭС`МА, ЭС`ВУУ, ЭС`КЕ ), Духами и ЭС`ЧИ
+									<li>Наносит маг. урон всем врагам в радиусе 3~5 кл. вокруг вас
+									<li>Открывает ЭС`МУ
+									<li>750%<span class="notsure"> ~ 1400%</span> MATK
+									<li>КА`ИНА влияет на цену в дс
+								</ul></p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+					</div>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />ЭС`ЧИ</h3></header>
+						<div>
+							<flavour>Кам настраивается на окружающее, изучая чудовищ и отмечая их.</flavour>
+							<p><b>Тип:</b> активное<br />
+							<b>Длительность:</b> 1~7 с<br />
+							<b>Время подготовки:</b> 0.7 с<br />
+							<b>Перезарядка:</b> нет<br />
+							<b>Общая задержка:</b> 3~1 с<br />
+							<b>Цена:</b> ~75 дс<br />
+							<b>Эффект:</b><ul>
+									<li>Враги в радиусе 3 кл. вокруг вас будут восстанавливать дс убившему их (около 10~15 дс, то есть уровень монстра / 10 дс)
+									<li>Эффект не отменяет действия брони Пожинателя Душ (Soul Collector's)
+									<li><span class="notsure">Этим можно также раздавать ЭС-статусы</span>
+								</ul></p>
+						</div>
+						<footer>
+							<p>Над головой цели появляется небольшой светящийся фиал.</p>
+						</footer>
+					</div>
+				</div>
+				<div id="ka-type" class="skillcat">
+					<h2 class="handwri">КА-</h2>
+					<p>КА-магия это благословения или контракты, заключённые с духами, зачастую на особых условиях. 
+					Они включают в себя возможность мистическим образом избежать следующего вреда, восстановить здоровье при получении атаки и даже мгновенное воскрешение при смерти.</p>
+					<p>КА-магия действует только на других шаманов, самого шамана и его близких.</p>
+					<p>Единственный способ дать эти эффекты кому-то ещё -- быть одержимым Духом Шамана.</p>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />КА`СТЭ</h3></header>
+						<div>
+							<flavour>Кам входит в состояние духа-хранителя, оставляя свою жизнь позади и сопровождая союзника.</flavour>
+							<p><b>Тип:</b> KA Switch<br />
+							<b>Требования:</b> Дух Крестоносца 1, Дух Священника 1<br />
+							<b>Время подготовки:</b> 1.5 с<br />
+							<b>Перезарядка:</b> средняя (15~30с)<br />
+							<b>Цена:</b> ~75дс<br />
+							<b>Эффект:</b>
+									<ul><li>вы становитесь призраком 1
+									<li>не можете использовать остальные умения
+									<li>ваше здоровье становится равным 1, и урон приходится по дс
+									<li>когда ваш подзащитный получает урон, вы получаете <span class="notsure">половину</span> его вместо него (в дс)
+									<li>когда ваши дс становятся равны 0, вы выходите из состояния (таким образом оставаясь в 1 пункте здоровья и с 0 душевных сил)
+									<li>когда вы с подзащитным разделены расстоянием, большим чем 14 клеток, или находитесь на разных локациях, эффект заканчивается</li>
+								</ul></p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+					</div>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Зеркало душ</h3></header>
+						<div>
+							<flavour></flavour>
+							<p><b>Тип:</b> KA-благословение<br />
+							<b>Цель:</b> только на себя<br />
+							<b>Требования:</b> <br />
+							<b>Время подготовки:</b> ~2 с<br />
+							<b>Длительность:</b> пока не исполнено<br />
+							<b>Перезарядка:</b> ~5 с<br />
+							<b>Общая задержка:</b> мгновенная (АСПД)<br />
+							<b>Цена:</b> 45~65 дс<br />
+							<b>Эффект:</b> Вы получаете статус &quot;Зеркало душ&quot;
+									<ul><li> следующий эффект КА-магии, который вы получите, отразится всем в радиусе 3 кл. вокруг вас
+									<li> его получат только те, кто может
+									<li> Зеркало душ после этого считается исполненным
+								</ul></p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+					</div>
+				</div>
+				<div id="on-type" class="skillcat">
+					<h2 class="handwri">ОН-</h2>
+					<p>OН-заклинания можно назвать &quot;кострами&quot; благодаря их связи с окружающей средой и природе распространения их эффекта.
+					Они зачастую воздействуют на пространство вокруг заклинателя или указанной точки, не разбирая союзника, врага, человека или чудовище.</p>
+					<p>Эффекты таких заклинаний различны: от массовых благословений до различных статусов, а совершаются они открытыми руками: 
+					широким круговым жестом.</p>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Костёр</h3></header>
+						<div>
+							<flavour>Приветствую сердце земель!</flavour>
+							<p><b>Тип:</b> активное <br />
+							<b>Цель:</b> зона в радиусе 3~5 кл. вокруг заклинателя<br />
+							<b>Время подготовки:</b> 1 с<br />
+							<b>Длительность:</b> 10~50с<br />
+							<b>Перезарядка:</b> значительная (0.5~1мин)<br />
+							<b>Цена:</b> ~100 дс<br />
+							<b>Эффект:</b>
+								<ul><li>поднимает естественное восстановление здоровья и душевных сил в зависимости от Силы Женьшеня / Лотоса заклинателя
+									<li>снижает время восстановления популяций на локации в 2 раза. (эта часть может иметь своё собственное время перезарядки)
+								</ul>
+							</p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+					</div>
+				</div>
+				<div id="tsu-type" class="skillcat">
+					<h2 class="handwri">ЦУ-</h2>
+					<p>ЦУ-заклинания можно назвать <q>сцепками</q>.</p>
+					<p>ЦУ-магия раз и навсегда связывает Кама с людьми и землями. Обет относится к ЦУ-магии.</p>
+					<div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Soulbond</h3></header>
+						<div>
+							<flavour>Прими моё истинное имя.</flavour>
+							<p><b>Тип:</b> активное <br />
+							<b>Цель:</b> персонаж игрока<br />
+							<b>Длительность:</b> на всю жизнь (подобно выборам Небесного Гладиатора)<br />
+							<b>Время подготовки:</b> 10 с (неснижаемо; не прерывается)<br />
+							<b>Цена:</b> 100 дс<br />
+							<b>Эффект:</b>
+								<ul><li>Принимает персонажа как <q>члена семьи</q> Кама. Это делает его целью его КА-магии.<br />
+									<li>Будет соответствующая пассивка ЦУ`О, дающая (0,0,1,1,2) дополнительных &quot;мест&quot;.
+								</ul>
+							</p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+					</div>
+				</div>
+				<div id="other_skills" class="skillcat">
+					<h2 class="handwri">Прочие</h2>
+					<p>Прочие умения из всех категорий.</p>
+					<div id="other_skills_content">
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Взор Пустоты</h3></header>
+							<div>
+								<flavour>Кам больше не способен ограничить зрение всего одним миром. Завеса для него становится тоньше и ближе, миры проникают друг в друга.</flavour>
+								<p><b>Тип:</b> KA, пассивное <br />
+								<b>Макс. ур.:</b> 3<br />
+								<b>Эффект:</b>
+									+3 кл. к радиусу всей целящей магии (вкл. заклинания шамана)
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+						</div>
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Поступь Пустоты</h3></header>
+							<div>
+								<flavour>Кам всегда находится одной ногой по Ту Сторону.</flavour>
+								<p><b>Тип:</b> ОН, пассивное <br />
+								<b>Макс. ур.:</b> 5<br />
+								<b>Эффект:</b>
+									После успешного удара комбо-ЭС-умением Кам получает (+13.5% , +22.3% , +36.8% , +60.6% , +100% ) к скорости передвижения на 3 с.<br />
+								<b>Нужно для:</b> 1 для ЦУ`О; 1 для КА`СТЭ; 1 для ЭС`ЧИ, 3 для ЭС`ЁН<br /></p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+						</div>
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Крылья вечности</h3></header>
+							<div>
+								<flavour>В борьбе с чудовищами будь осторожен, чтобы самому не стать чудовищем...</flavour>
+								<p><b>Тип:</b> ЦУ, пассивное <br />
+								<b>Макс. ур.:</b> 1<br />
+								<b>Эффект:</b>
+									КА-заклинания теперь открывают комбо-ЭС-магию, но их больше нельзя накладывать на себя.<br />
+								<b>Требования:</b> 100500 (высшая степень мастерства)<br />
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+							<div></div>
+						</div>
+						<div class="w3-card skillcard2 w3-mobile">
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Цветок вечности</h3></header>
+							<div>
+								<flavour>...Ибо если будешь долго всматриваться в бездну, бездна начнёт всматриваться в тебя.</flavour>
+								<p><b>Тип:</b> ОН, пассивное <br />
+								<b>Макс. ур.:</b> 10<br />
+								<b>Эффект:</b>
+									Урон ЭС`МЫ возрастает с (40 + б.ур.) % до <span class="notsure">[ (40 + б.ур.) * (ур.умения / 2) ] % </span>
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+						</div>
+					</div>
+				
+					<!-- <div class="w3-card skillcard w3-mobile">
+						<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Name</h3></header>
+						<div>
+							<flavour>Flavour description</flavour>
+							<p><b>Тип:</b> <br />
+							<b>Цель:</b> <br />
+							<b>Время подготовки:</b> <br />
+							<b>Длительность:</b> <br />
+							<b>Перезарядка:</b> <br />
+							<b>Общая задержка:</b> <br />
+							<b>Цена:</b> <br />
+							<b>Эффект:</b>
+									<ul>
+									<li>
+									<li>
+								</ul><br />
+							<b>Требования:</b> <br />
+							<b>Нужно для:</b> </p>
+						</div>
+						<footer>
+							<p></p>
+						</footer>
+					</div> -->
+
+				</div>
+			</div>
+			<div id="features" class="w3-container content">
+
+				<h1 class="handwri">Особенности</h1>
+				<h3 class="poiret">Бонусы</h3>
+
+				<p>Один из самых высоких бонусов к <strong>Интеллекту</strong> (<strong> +13</strong>) и <strong>Сноровка +12</strong> благодаря тому, что Каму необходимо быть 
+				отличным посредником, принимающим обдуманные и прочувствованные решения с потрясающей быстротой, а так же мистиком, в большой степени опирающимся на ум, мудрость 
+				и восприимчивость. <strong>Живучесть +7</strong> из-за того, что Кам не перестаёт быть шаманом и взаимодействует с духами и холодными энергиями с Той Стороны, но
+				теперь так же прочно и глубоко связан с дикой природой этого Мира. <strong>Сила +3</strong>, нужная в деле выживания, и остальные +0. <i>(всего 35)</i></p>
+				
+				<h3 class="poiret">Владение оружием</h3>
+				
+				<p>Кам владеет <b>кинжалами, жезлами и посохами.</b></p>
+			
+			</div>
+			
+			<!-- other stuff -->
+			<div id="thanks" class="w3-container content">
+
+				<h1 class="handwri">Спасибы</h1>
+                <h3 class="poiret">Без вас здесь было бы иначе</h3>
+                <p>Концепт игры Рагнарёк Онлайн: <a href="http://ro.gnjoy.com/">Gravity Co, Ltd.</a></p>
+				<p>Любимые сервера: <a href="http://www.rofenrir.ru/">ROFenrir</a>, <a href="http://playro.ru/">PlayRO</a></p>
+				<p>Обои: Найдены в Сети (автор? <a href='#' onclick="show_stuff('contacts')">Свяжитесь</a> со мной!)</p>
+				<p></p>
+				<p style="bottom;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /><br /></a>Материалы доступны по лицензии <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.ru">Creative Commons</a>.</p>
+
+			</div>
+			<div id="contacts" class="w3-container content">
+
+				<h1 class="handwri">Contacts</h1>
+				<p>
+				<strong>Автор:</strong> Akaineko (Астаси) (
+					<a rel="" href="https://github.com/Akaineko-astasi" >профиль GitHub</a>, 
+					<a rel="" href="https://gitlab.com/akaineko" >профиль GitLab</a>, 
+					<a rel="" href="#" onclick="show_stuffie('taggie')">номер в Дискорде</a><span id="taggie" style="display: none;">: Akaineko#7948</span>
+				)
+				</p>
+			</div>
+
+		</div>
+    </body>
+</html>

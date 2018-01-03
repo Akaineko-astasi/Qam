@@ -9,11 +9,13 @@
 
 @media only screen and (max-width: 50em) {
 	.skillcard2 { width: 75%; }
+	:lang(ru) > .skillcard {width: 80%;}
 }
 
 @media only screen and (min-width: 50em) {
 	#other_skills_content {	display: grid; grid-template-columns: auto auto; }
 	.skillcard2 { width: 95%; }
+	:lang(ru) > .skillcard {width: 80%;}
 }		
 
 @media only screen and (min-width: 75em) {
@@ -112,10 +114,10 @@ body {
 .skillcard flavour {font-style: italic;}
 .skillcard2 flavour {font-style: italic;}
 
-
 /* Skill Cards End */
 
-/* .skillcat {margin-top: 15%;} */
+::-moz-selection {color: rgba(255,255,255,1); background: rgba(0,0,0,0.1);}
+::selection { color: rgba(255,255,255,1); background: rgba(0,0,0,0.1); }
 
 /* Animations */
 .fade {
@@ -137,8 +139,8 @@ body {
 
 
 /* Lang Lab Start */
-:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
-:lang(ru) > q { quotes: '«' '»'; }
+:lang(en) > q { quotes: '\201E' '\201C' '\201A' '\2018' ; }
+:lang(ru) > q { quotes: '\00AB' '\00BB'; }
 /* Lang Lab End */
 
 q {font-style: italic;}

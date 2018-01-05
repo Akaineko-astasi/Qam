@@ -121,6 +121,25 @@ body {
 
 /* Skill Cards End */
 
+#tlptotop {
+	display: none;
+	position: fixed; bottom: 2%; right: 2%;
+	z-index: 99;
+	border: none; outline: none;
+	background-color: rgba(255,255,255,.2);
+	color: rgba(255,255,255,.6);
+	cursor: pointer;
+	height: 2em;width: 2em;
+	border-radius: 2em;
+	font-size: 200%;
+}
+
+#tlptotop:hover {
+	background-color: rgba(0,0,0,0.3);
+	color: rgba(255,255,255,1);
+}
+
+
 ::-moz-selection {color: rgba(255,255,255,1); background: rgba(0,0,0,0.1);}
 ::selection { color: rgba(255,255,255,1); background: rgba(0,0,0,0.1); }
 

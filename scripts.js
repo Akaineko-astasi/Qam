@@ -35,6 +35,24 @@ function show_stuffie(id) {
 }
 
 
+//Scrolling and Teleporting to top
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("tlptotop").style.display = "block";
+    } else {
+        document.getElementById("tlptotop").style.display = "none";
+    }
+}
+
+function teleport_to_top() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+//Scrolling and Teleporting to top Ends
+
+
 /* 
 function() {
   $(this).addClass('current').siblings().removeClass('current')

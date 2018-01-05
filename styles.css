@@ -13,7 +13,7 @@
 }
 
 @media only screen and (min-width: 50em) {
-	#other_skills_content {	display: grid; grid-template-columns: auto auto; }
+	.other_skills_content {	display: grid; grid-template-columns: auto auto; }
 	.skillcard2 { width: 95%; }
 	:lang(ru) > .skillcard {width: 80%;}
 }		

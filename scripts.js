@@ -34,7 +34,6 @@ function show_stuffie(id) {
 	}
 }
 
-
 //Scrolling and Teleporting to top
 window.onscroll = function() {scrollFunction()};
 
@@ -53,12 +52,50 @@ function teleport_to_top() {
 //Scrolling and Teleporting to top Ends
 
 
-/* 
-function() {
-  $(this).addClass('current').siblings().removeClass('current')
-    .parents('div.section').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
-  var ulIndex = $('ul.tabs').index($(this).parents('ul.tabs'));
-  eraseCookie('tabCookie' + ulIndex);
-  createCookie('tabCookie' + ulIndex, $(this).index(), 365);
+//Filter Experiment v.0.2 -- ACHTUNG!!1 COSTYL DETECTED
+function type_filter_ES() {
+	document.getElementById('blablah').style.display = "none";
+	var elmtz1 = document.getElementsByClassName('KA-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "none";}
+	var elmtz2 = document.getElementsByClassName('ON-type'); for (i = 0; i < elmtz2.length; i++) { elmtz2[i].style.display = "none";}
+	var elmtz3 = document.getElementsByClassName('TSU-type'); for (i = 0; i < elmtz3.length; i++) { elmtz3[i].style.display = "none";}
+	var elmtz1 = document.getElementsByClassName('ES-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "block";}
 }
- */
+function type_filter_KA() {
+	document.getElementById('blablah').style.display = "none";
+	var elmtz1 = document.getElementsByClassName('ES-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "none";}
+	var elmtz2 = document.getElementsByClassName('ON-type'); for (i = 0; i < elmtz2.length; i++) { elmtz2[i].style.display = "none";}
+	var elmtz3 = document.getElementsByClassName('TSU-type'); for (i = 0; i < elmtz3.length; i++) { elmtz3[i].style.display = "none";}
+	var elmtz1 = document.getElementsByClassName('KA-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "block";}
+}
+function type_filter_ON() {
+	document.getElementById('blablah').style.display = "none";
+	var elmtz1 = document.getElementsByClassName('KA-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "none";}
+	var elmtz2 = document.getElementsByClassName('ES-type'); for (i = 0; i < elmtz2.length; i++) { elmtz2[i].style.display = "none";}
+	var elmtz3 = document.getElementsByClassName('TSU-type'); for (i = 0; i < elmtz3.length; i++) { elmtz3[i].style.display = "none";}
+	var elmtz1 = document.getElementsByClassName('ON-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "block";}
+}
+function type_filter_TSU() {
+	document.getElementById('blablah').style.display = "none";
+	var elmtz1 = document.getElementsByClassName('ES-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "none";}
+	var elmtz2 = document.getElementsByClassName('ON-type'); for (i = 0; i < elmtz2.length; i++) { elmtz2[i].style.display = "none";}
+	var elmtz3 = document.getElementsByClassName('KA-type'); for (i = 0; i < elmtz3.length; i++) { elmtz3[i].style.display = "none";}
+	var elmtz1 = document.getElementsByClassName('TSU-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "block";}
+}
+function type_filter_none() {
+	document.getElementById('blah').style.display = "none";
+	document.getElementById('blablah').style.display = "inline";
+	var elmtz1 = document.getElementsByClassName('ES-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "none";}
+	var elmtz2 = document.getElementsByClassName('ON-type'); for (i = 0; i < elmtz2.length; i++) { elmtz2[i].style.display = "none";}
+	var elmtz3 = document.getElementsByClassName('KA-type'); for (i = 0; i < elmtz3.length; i++) { elmtz3[i].style.display = "none";}
+	var elmtz1 = document.getElementsByClassName('TSU-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "none";}
+}
+function type_filter_ALL() {
+	document.getElementById('blah').style.display = "block";
+	document.getElementById('blablah').style.display = "inline";
+	var elmtz1 = document.getElementsByClassName('ES-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "block";}
+	var elmtz2 = document.getElementsByClassName('ON-type'); for (i = 0; i < elmtz2.length; i++) { elmtz2[i].style.display = "block";}
+	var elmtz3 = document.getElementsByClassName('KA-type'); for (i = 0; i < elmtz3.length; i++) { elmtz3[i].style.display = "block";}
+	var elmtz1 = document.getElementsByClassName('TSU-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "block";}
+}
+//Filter Experiment end
+

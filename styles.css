@@ -121,6 +121,13 @@ body {
 .skillcard flavour {font-style: italic;}
 .skillcard2 flavour {font-style: italic;}
 
+.coolimg {
+	display: block;
+    margin: 3% auto 3% auto;
+    border-radius: 7px;
+	animation:opac .8s;
+}
+
 
 #tlptotop {
 	display: none;

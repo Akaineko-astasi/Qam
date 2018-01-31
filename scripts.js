@@ -53,7 +53,7 @@ function teleport_to_top() {
 
 
 //Filter Experiment v.0.2 -- ACHTUNG!!1 COSTYL DETECTED
-function type_filter_ES() {
+/* function type_filter_ES() {
 	document.getElementById('blablah').style.display = "none";
 	var elmtz1 = document.getElementsByClassName('KA-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "none";}
 	var elmtz2 = document.getElementsByClassName('ON-type'); for (i = 0; i < elmtz2.length; i++) { elmtz2[i].style.display = "none";}
@@ -96,6 +96,6 @@ function type_filter_ALL() {
 	var elmtz2 = document.getElementsByClassName('ON-type'); for (i = 0; i < elmtz2.length; i++) { elmtz2[i].style.display = "block";}
 	var elmtz3 = document.getElementsByClassName('KA-type'); for (i = 0; i < elmtz3.length; i++) { elmtz3[i].style.display = "block";}
 	var elmtz1 = document.getElementsByClassName('TSU-type'); for (i = 0; i < elmtz1.length; i++) { elmtz1[i].style.display = "block";}
-}
+}*/
 //Filter Experiment end
 

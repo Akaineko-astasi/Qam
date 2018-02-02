@@ -508,6 +508,32 @@
 							</div>	
 						</div>
 						<div>
+							
+							<div class="w3-card skillcard w3-mobile">
+								<header><h3><img class="skillicon" src="icons/QA_VOIDEDGE.png"><br />Edge of the Void</h3></header>
+								<div>
+									<flavour></flavour>
+									<p><b>Type:</b> Switch<br />
+									<b>Max level:</b> 5<br />
+									<b>Target:</b>self <br />
+									<b>Casting Time:</b> 3<span class="notsure">~0</span> sec<br />
+									<b>Duration:</b> 5 min<br />
+									<b>Cooldown:</b> 3 sec<br />
+									<b>Cast Delay:</b> no (ASPD)<br />
+									<b>Resources:</b> 50 sp<br />
+									<b>Effect:</b> Enter the Edge of the Void state
+										<ul>
+											<li> Every something you gain Void counters
+											<li> Void counters persist 1 min and maximum is (1, 3, 5, 5, 7)
+											<li> Every Void counter boosts your magic and physical damage and you lose HP prop. damage dealt
+											<li> Every Void counter reduces the efficacy of healing received (to a max of -100%)
+										</ul> The state is not entered if you are in the Edge of Eternity state.<br />
+								</div>
+								<footer>
+									<p>Availabilty of this skill is under question.</p>
+								</footer>
+							</div>
+							
 							<div class="w3-card skillcard w3-mobile">
 								<header><h3><img class="skillicon" src="icons/QA_HEAVENSSONG.png"><br />Heaven's Song</h3></header>
 								<div>
@@ -650,13 +676,13 @@
 										<b>Cooldown:</b> 3 sec<br />
 										<b>Cast Delay:</b> Instant (ASPD)<br />
 										<b>Resources:</b> 50 sp<br />
-										<b>Effect:</b>
+										<b>Effect:</b> You enter the Edge of Eternity state.
 											<ul>
 												<li>If your HP is 10% or less, the next damage may go to SP instead
 												<li>If your SP is 10% or less, the next cost may go to HP instead (multiplied by 10)
 												<li>The probability is 10 * skilllvl %
 												<li>Level selectable
-											</ul>
+											</ul> You can't enter the state if you are at the Edge of the Void.
 									</p>
 								</div>
 								<footer>

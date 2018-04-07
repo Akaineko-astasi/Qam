@@ -103,9 +103,8 @@
 							<b>Requirements:</b> none<br />
 							<b>Effect:</b></p>
 								<p><ul><li>Kihop now grants MATK bonus along with ATK
-									<li>Qam in the Spirit State now is not able to break party experience sharing
 									<li>Peaceful Break and Happy Break now have % recovery values
-									<li>Soul Links are rebalanced
+									<li>Soul Links are rebalanced (Wings of Souls effects are added)
 									<li>Spirit State ends once location is changed
 								</ul></p>
 						</div>
@@ -117,7 +116,7 @@
 						<p>ES-type skills can only be cast on monsters.</p>
 
 						<div class="w3-card skillcard w3-mobile ES-type">
-							<header><h3><img class="skillicon" src="icons/QA_ESYONG.png"><br />Breath of the Void</h3></header>
+							<header><h3><img class="skillicon" src="icons/QA_ESYONG.png"><br />ES`YONG</h3></header>
 							<div>
 								<flavour>With wild incantation, winds of the Other World are called upon.</flavour>
 								<p><b>Type:</b> ES Active<br />
@@ -126,15 +125,15 @@
 								<b>Cast Delay:</b> Instant (ASPD)<br />
 								<b>Resources:</b> 230~130 sp<br />
 								<b>Effect:</b><ul>
-										<li>Can only be cast within 3 sec after ( ES'TIN, ES'TUN, ES'MA, ES'WOO, ES'KE ), Soul Links, and ES'CHI
+										<li>Can only be cast within 3 sec after ( ES`TIN, ES`TUN, ES`MA, ES`WOO, ES`KE ), Soul Links, and ES`CHI
 										<li>Deals magic damage to all enemies in a 3~5 cell radius around you.
-										<li>Opens ES'MA
+										<li>Opens ES`MA
 										<li>750%<span class="notsure"> ~ 1400%</span> MATK
-										<li>KA'INA affects sp cost
+										<li>KA`INA affects sp cost
 									</ul></p>
 							</div>
 							<footer>
-								<p>ES'YONG</p>
+								<p></p>
 							</footer>
 						</div>
 						<div class="w3-card skillcard w3-mobile ES-type">
@@ -180,6 +179,29 @@
 									<p>ES`AHE</p>
 								</footer>
 						</div>
+						<div class="w3-card skillcard w3-mobile ES-type">
+							<header><h3><img class="skillicon" src="icons/QA_ESCHI.png"><br />ES`PA</h3></header>
+							<div>
+								<flavour></flavour>
+								<p>
+									<b>Type:</b> ES Active<br />
+									<b>Target:</b> single<br />
+									<b>Casting Time:</b> 0.7 sec<br />
+									<b>Cooldown:</b> no<br />
+									<b>Cast Delay:</b> instant (ASPD)<br />
+									<b>Resources:</b> 15~25 sp<br />
+									<b>Effect:</b><ul>
+											<li>Applies Sleep, Silence (base chance is 90%)
+											<li>Deals <span class="notsure">( 350% АТК ) , ( 350% МАТК ) , ( 250% АТК + 250% МАТК )</span> to the target and enemies in 2 cell radius around it
+											<li>Opens ES`MA
+										</ul>
+								</p>
+							</div>
+							<footer>
+								<p></p>
+							</footer>
+						</div>
+
 					</div>
 					<div id="ka-type" class="skillcat KA-type">
 						<h2 class="handwri">KA-type</h2>
@@ -254,6 +276,24 @@
 							</footer>
 						</div>
 						
+						<div class="w3-card skillcard w3-mobile KA-type">
+								<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />KA`ANG</h3></header>
+								<div>
+									<flavour></flavour>
+									<p><b>Type:</b> KA Buff<br />
+									<b>Casting Time:</b> 1 sec<br />
+									<b>Duration:</b> <br />
+									<b>Cooldown:</b> <br />
+									<b>Cast Delay:</b> instant (ASPD)<br />
+									<b>Resources:</b> 35 sp<br />
+									<b>Effect:</b> Increases weight limit, allows HP and SP regeneration while overweighted<br />
+									<b>Requirements:</b>Blacksmith Spirit 1 <br />
+								</div>
+								<footer>
+									<p></p>
+								</footer>
+							</div>
+						
 					</div>
 					<div id="on-type" class="skillcat ON-type">
 						<h2 class="handwri">ON-type</h2>
@@ -291,11 +331,11 @@
 									<b>Duration:</b> 320 sec<br />
 									<b>Cooldown:</b> 30 sec<br />
 									<b>Resources:</b> 45 sp<br />
-									<b>Effect:</b> Damage receiving is delayed by 1 , 3 , 5 sec; players lose natural sp regeneration
+									<b>Effect:</b> Damage receiving is delayed by 1 , 3 , 5 sec; natural sp regeneration stops
 									</p>
 								</div>
 								<footer>
-									<p></p>
+									<p>Item skill available during Bonfire</p>
 								</footer>
 							</div>
 							
@@ -312,7 +352,7 @@
 									</p>
 								</div>
 								<footer>
-									<p></p>
+									<p>Item skill available during Bonfire</p>
 								</footer>
 							</div>
 							
@@ -328,7 +368,7 @@
 									</p>
 								</div>
 								<footer>
-									<p></p>
+									<p>Item skill available during Bonfire</p>
 								</footer>
 							</div>
 							
@@ -345,7 +385,7 @@
 									</p>
 								</div>
 								<footer>
-									<p></p>
+									<p>Item skill available during Bonfire</p>
 								</footer>
 							</div>
 						
@@ -497,7 +537,7 @@
 									<p><b>Type:</b> ON Passive<br />
 									<b>Max level:</b> 7<br />
 									<b>Effect:</b>
-										ES'MA base damage increases from (40 + blvl) % to <span class="notsure">[ (40 + blvl) * (skilllvl / 2) ] % </span>
+										ES'MA base damage increases from (40 + blvl) % to <span class="notsure">[ (40 + blvl) * (skilllvl / 2 + 1) ] % </span>
 									</p>
 								</div>
 								<footer>
@@ -506,6 +546,34 @@
 							</div>	
 						</div>
 						<div>
+						
+							<div class="w3-card skillcard w3-mobile">
+								<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Breath of the Void</h3></header>
+								<div>
+									<flavour></flavour>
+									<p><b>Type:</b> Active<br />
+									<b>Max level:</b> 10<br />
+									<b>Target:</b> enemies in 3 * (sight distance) zone in target direction<br />
+									<b>Casting Time:</b> 3 sec<br />
+									<b>Cooldown:</b> 5 sec<br />
+									<b>Cast Delay:</b> 1 sec<br />
+									<b>Resources:</b> 65 sp<br />
+									<b>Effect:</b>
+										<ul>
+											<li>Works against monsters and player characters
+											<li>Base damage is 1200% MATK, boosted up by <u>everything</u>
+											<li>Damage is fixed Ghost property
+											<li>If cast in the Soul Linked state, sp cost is x2 and damage is x1,5
+											<li>Available in Spirit Form (KA`STEH)
+											<li>Ends KA`STEH and Soul Link
+										</ul><br />
+									<!--<b>Requirements:</b> <br />
+									<b>Is required:</b>-->
+								</div>
+								<footer>
+									<p>Availabilty of this skill is under question.</p>
+								</footer>
+							</div>
 							
 							<div class="w3-card skillcard w3-mobile">
 								<header><h3><img class="skillicon" src="icons/QA_VOIDEDGE.png"><br />Edge of the Void</h3></header>
@@ -532,7 +600,7 @@
 								</footer>
 							</div>
 							
-							<div class="w3-card skillcard w3-mobile">
+							<!--<div class="w3-card skillcard w3-mobile">
 								<header><h3><img class="skillicon" src="icons/QA_HEAVENSSONG.png"><br />Heaven's Song</h3></header>
 								<div>
 									<p><b>Type:</b> Buff<br />
@@ -551,8 +619,8 @@
 								<footer>
 									<p></p>
 								</footer>
-							</div>							
-							<div class="w3-card skillcard w3-mobile">
+							</div>-->			
+							<!--<div class="w3-card skillcard w3-mobile">
 								<header><h3><img class="skillicon" src="icons/QA_HEAVENSCALL.png"><br />Heaven's Call</h3></header>
 								<div>
 									<p><b>Type:</b> Buff<br />
@@ -572,7 +640,35 @@
 									<p></p>
 								</footer>
 							</div>
+						</div>-->
+						
+						<div class="w3-card skillcard w3-mobile">
+							<header><h3><img class="skillicon" src="icons/QA_VOW.png"><br />Unity</h3></header>
+							<div>
+								<flavour></flavour>
+								<p><b>Type:</b> Buff<br />
+								<b>Max level:</b> 5<br />
+								<b>Target:</b> party members on the same map<br />
+								<b>Casting Time:</b> 1~1.5 sec<br />
+								<b>Duration:</b> 320 sec<br />
+								<b>Sub-duration:</b> skilllvl * 5 sec<br />
+								<b>Cooldown:</b> no<br />
+								<b>Cast Delay:</b> no (ASPD)<br />
+								<b>Resources:</b> 65 sp<br />
+								<b>Effect:</b><ul>
+										<li>Lvl.2: Resistance: whenever a party member receives a simple negative status, all party member get +2% to resistance to those statuses (up to 12 times)
+										<li>Lvl.3: Defence: whenever a party member receives damage (not by their own skills), all party members get +15 soft DEF and +5 Flee (up to 12 times)
+										<li>Lvl.4: Senses: whenever a party member's attack misses, all party members get +5 Hit (up to 12 times)
+										<li>Lvl.5: Speed: all party members' speed becomes that of the fastest one's
+									Only one kind of effect may be active</ul><br />
+								<!--<b>Requirements:</b> <br />
+								<b>Is required:</b>-->
+							</div>
+							<footer>
+								<p></p>
+							</footer>
 						</div>
+						
 						<div class="other_skills_content">
 							<div class="w3-card skillcard2 w3-mobile">
 								<header><h3><img class="skillicon" src="icons/QA_DESTINYGATE.png"><br />Gate of Destiny</h3></header>

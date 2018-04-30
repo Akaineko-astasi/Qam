@@ -116,8 +116,8 @@ body {
 }
 .skillcard h3 {text-align: center; font-family: "Poiret One";}
 .skillcard2 h3 {text-align: center; font-family: "Poiret One";}
-.skillcard footer { color:rgba(0,0,0,0.65); }
-.skillcard2 footer { color:rgba(0,0,0,0.65); }
+.skillcard footer { color:rgba(0,0,0,0.5); }
+.skillcard2 footer { color:rgba(0,0,0,0.5); }
 .skillcard flavour {font-style: italic;}
 .skillcard2 flavour {font-style: italic;}
 
